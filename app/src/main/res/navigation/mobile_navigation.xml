@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pribha.krishimitra_app.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cropsFragment"
+        android:name="com.pribha.krishimitra_app.CropsFragment"
+        android:label="Crops"
+        tools:layout="@layout/fragment_crops" />
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="com.pribha.krishimitra_app.OthersFragment"
+        android:label="Others"
+        tools:layout="@layout/fragment_others" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.pribha.krishimitra_app.WeatherFragment"
+        android:label="Weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.pribha.krishimitra_app.PostFragment"
+        android:label="New Post"
+        tools:layout="@layout/fragment_post" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.pribha.krishimitra_app.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>
